@@ -1,0 +1,66 @@
+$marketing-site-hero-height: 100vh;
+
+nav {
+  background: #282323;
+  color: #fff;
+  display: flex;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+
+  img {
+    height: 64px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  ul {
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    list-style-type: none;
+
+    li {
+      margin: 0 40px;
+
+      a {
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      a:hover {
+        color: $secondary-color; 
+      }
+      
+    }
+  }
+
+}
+
+
+
+.marketing-site-hero {
+  background: url('../img/hero-l.jpg') top right no-repeat;
+  height: $marketing-site-hero-height;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 40em) {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  text-align: right;
+
+  .grid-x {
+    justify-content: flex-end;
+  }
+
+  .button {
+    margin-top: 50px;
+  }
+}

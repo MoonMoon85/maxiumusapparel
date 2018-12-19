@@ -1,0 +1,100 @@
+.align-center {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 68px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: $secondary-color; 
+}
+
+h3 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 20px; 
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+section.grid-container {
+  margin: 120px auto;
+}
+
+.button {
+  background: $primary-color;
+  text-transform: uppercase;
+  max-width: 200px;
+}
+
+.info-bar {
+  background: $primary-color;
+  height: 77px;
+  text-align: center;
+  color: #fff;
+
+  .cell {
+    border-right: 1px solid #fff;
+
+    p {
+      padding: 28px 0; 
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+  .cell:last-child {
+    border-right: 0;
+  }
+}
+
+.what-we-do {
+  
+  .cell:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 40px;
+  }
+
+  .cell:last-child img {
+    float: left;
+    width: 50vw;
+    max-width: 50vw;
+  }
+}
+
+.range-grid {
+   margin-top: 40px;
+}
+
+.contact {
+
+  background: $primary-color;
+  
+  .cell:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 40px;
+  }
+
+  .cell:last-child img {
+    float: left;
+    width: 50vw;
+    max-width: 50vw;
+  }
+}
