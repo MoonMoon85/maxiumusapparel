@@ -61,7 +61,7 @@ section.grid-container {
   }
 }
 
-.what-we-do {
+#what-we-do {
   @media screen and (min-width: 768px) {
     .cell:first-child {
       display: flex;
@@ -82,7 +82,7 @@ section.grid-container {
    margin-top: 40px;
 }
 
-.contact {
+#contact {
 
   background: $primary-color;
   
