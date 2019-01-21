@@ -1,12 +1,15 @@
 $marketing-site-hero-height: 100vh;
 
 nav {
-  background: #282323;
+  background: #231f20;
   color: #fff;
   display: flex;
-  position: fixed;
+  @media screen and (min-width: 768px) {
+    position: fixed;
+  }
   height: 80px;
   width: 100%;
+  
 
   img {
     height: 64px;
@@ -52,6 +55,7 @@ nav {
   background-size: cover;
   display: flex;
   align-items: center;
+  text-align: center;
 
   @media screen and (min-width: 40em) {
     background-position: center center;

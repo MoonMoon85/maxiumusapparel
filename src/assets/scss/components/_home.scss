@@ -10,6 +10,7 @@
 h1 {
   font-size: 68px;
   font-weight: 600;
+  line-height: 70px;
 }
 
 h2 {
@@ -31,7 +32,22 @@ p {
 }
 
 section.grid-container {
-  margin: 120px auto;
+  margin: 40px auto;
+}
+
+#what-we-do {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  section.grid-container {
+    margin: 120px auto;
+  }
+
+  #what-we-do {
+    margin-top: 0;
+    text-align: left;
+  }
 }
 
 .button {
@@ -83,7 +99,9 @@ section.grid-container {
 }
 
 #contact {
-
+  h3 { 
+    color: #fff;
+  }
   background: $primary-color;
   
   @media screen and (min-width: 768px) {
@@ -92,12 +110,79 @@ section.grid-container {
       flex-direction: column;
       justify-content: center;
       padding-right: 40px;
+      padding-top: 40px;
     }
   
     .cell:last-child img {
       float: left;
       width: 50vw;
       max-width: 50vw;
+    }
+  }
+
+  .contact-us-section {
+    .responsive-embed {
+      margin-bottom: 0;
+      padding-bottom: 55%;
+    }
+  }
+  
+  .contact-us-form {
+    input[type=text],
+    input[type=email],
+    textarea {
+      margin-bottom: 1.5rem;
+      background: $primary-color;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  }
+  
+  .contact-us-form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    input[type=submit] {
+      background: $secondary-color
+    }
+  
+ 
+  }
+  
+  .contact-us-list {
+    list-style-type: none;
+    margin: 0 0 40px;
+    
+    
+    li {
+      color: #fff;
+      a {
+        color: #fff;
+      }
+    }
+  
+    li::before {
+      margin-right: 2rem;
+      font-size: 2rem;
+      vertical-align: middle;
+      color: #fff;
+      font-family: 'FontAwesome';
+    }
+  
+    // generates icons - change fontawesome content codes below to change icons
+    .address::before {
+      content: '\f041';
+      margin-left: 0.4rem;
+      margin-right: 2.3rem;
+    }
+  
+    .email::before {
+      content: '\f003';
+    }
+  
+    .phone::before {
+      content: '\f098';
     }
   }
   
